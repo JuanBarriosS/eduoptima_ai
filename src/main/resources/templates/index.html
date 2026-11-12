@@ -1,0 +1,11 @@
+<!-- Iterar asignaciones en result.html -->
+<tr th:each="a : ${assignments}">
+    <td th:text="${a.studentName}"></td>
+    <td th:text="${a.tutorName}"></td>
+    <td th:text="${a.topic}"></td>
+    <td th:text="${a.score}"></td>
+</tr>
+
+<!-- Mostrar valor de función objetivo y estado -->
+<p>Estado: <strong th:text="${response.status}"></strong></p>
+<p>Valor óptimo: <strong th:text="${response.objectiveValue}"></strong></p>
